@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   
+    header{
+      background-color: rgb(60, 121, 174);
+      height: 200px;
+      color: aliceblue;
+    }
+    main{
+      background-color: rgb(1, 129, 241);
+      height: 200px;
+      color: aliceblue;
+
+    }
+    footer{
+      background-color: rgb(171, 209, 242);
+      height: 200px;
+      color: aliceblue;
+
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <p>ここはヘッダーです。</p>
+      <button onclick="headerModule.countUp()">カウントアップ</button>
+      <p>いいね</p>
+      <button onclick="headerModule.selectMenu()">メニューを選択</button>
+    </div>
+  </header>
+
+  <main>
+    <div>
+      ここはメイン
+
+      <p></p>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      ここはフッター
+      <button onclick="footerModule.selectMenu()">メニューを選択</button>
+    </div>
+  </footer>
+
+  
+
+  <script src="./scope/header.js" type="text/javascript" defer></script>
+  <script src="./scope/async.js" type="text/javascript" defer></script>
+  <script src="./scope/footer.js" type="text/javascript" defer></script>
+</body>
+</html>

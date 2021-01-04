@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <main>
+    <div id="hoge">クラスネームはhoge</div>
+    <button onclick="getDomElementModule.getId('hoge')">idで要素を指定して取得する</button>
+
+    <div style="margin-bottom:26px">
+    </div>
+
+    <div class="foo">fooっていうクラスネーム</div>
+    <div class="foo">fooっていうクラスネーム</div>
+    <div class="bar">barっていうクラスネーム</div>
+
+    <button onclick="getDomElementModule.getClasses('foo')">class要素を指定して取得する</button>
+
+      <div style="margin-bottom:26px">
+      </div>
+
+      <form action="" name="demoForm">
+        <div>
+          <label for="title-id">タイトル</label>
+          <input type="text" name="title" id="title-id" />
+        </div>
+
+        <div>
+          <label for="description-id">説明</label>
+          <input type="text" name="description" id="description-id"/>
+        </div>
+
+        <!-- チェックボックス -->
+        <div style="margin-bottom:26px">
+        </div>
+
+
+        <div>
+          <label for="js">JavaScript</label>
+          <input id="js" name="languages" type="checkbox" value="JavaScript">
+          <label for="ts">TypeScript</label>
+          <input id="ts" name="languages" type="checkbox" value="TypeScript">
+          <label for="php">PHP</label>
+          <input id="php" name="languages" type="checkbox" value="PHP">
+          <label for="ruby">Ruby</label>
+          <input id="ruby" name="languages" type="checkbox" value="Ruby">
+        </div>
+      </form>
+
+      <button onclick="getDomElementModule.submitForm()">
+        Form要素を取得する
+      </button>
+  </main>
+
+
+  <script src="dom.js"></script>
+</body>
+</html>
